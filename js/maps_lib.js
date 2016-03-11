@@ -28,7 +28,7 @@ var MapsLib = {
   //NOTE: numeric IDs will be depricated soon
   fusionTableId:      "1abT7kEp8xQHfcW1uWh6JSdR2E-XVnmuBqYpmxL--", //Point data layer
   
-    polygon1TableID:    "1izR18r7ZBrsOym8nBoPiyaML-oyWvViAgZxbsk6c", //Voter precincts Newton County
+    polygon1TableID:    "1Pp7e2olDsmmpiGYbN2eOxsGWr1o8UEbfpp2qA2lw", //Voter precincts Newton County
   polygon2TableID:    "1q7msD-StNBYKANIYENFH5DpA6i8WHzzdrO9zE60f", //Voter polling locations
 
   //*MODIFY Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/
