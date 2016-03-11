@@ -152,11 +152,11 @@ var MapsLib = {
     if ( $("#cbType3").is(':checked')) searchType += "24,";
     if ( $("#cbType4").is(':checked')) searchType += "3,";
     if ( $("#cbType5").is(':checked')) searchType += "9,";
-   if ( $("#cbType1").is(':checked')) searchType += "6,";
-    if ( $("#cbType2").is(':checked')) searchType += "14,";
-    if ( $("#cbType3").is(':checked')) searchType += "25,";
-    if ( $("#cbType4").is(':checked')) searchType += "15,";
-    if ( $("#cbType5").is(':checked')) searchType += "16,";
+   if ( $("#cbType6").is(':checked')) searchType += "6,";
+    if ( $("#cbType7").is(':checked')) searchType += "14,";
+    if ( $("#cbType8").is(':checked')) searchType += "25,";
+    if ( $("#cbType9").is(':checked')) searchType += "15,";
+    if ( $("#cbType10").is(':checked')) searchType += "16,";
     whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";
     //-------end of custom filters--------
 
