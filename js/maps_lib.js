@@ -331,7 +331,7 @@ var MapsLib = {
   getList: function(whereClause) {
     // select specific columns from the fusion table to display in th list
     // NOTE: we'll be referencing these by their index (0 = School, 1 = GradeLevels, etc), so order matters!
-    var selectColumns = "WeightedPrimD, FullName, FullAddress, Phone";
+    var selectColumns = "PrecinctName, LikelyDem, FullName, FullAddress, Phone";
     MapsLib.query(selectColumns, whereClause,"", "", 500, "MapsLib.displayList");
   },
 
@@ -355,7 +355,8 @@ var MapsLib = {
       <table class='table' id ='list_table'>\
         <thead>\
           <tr>\
-            <th>WeightedPrimD</th>\
+            <th>Precinct</th>\
+            <th>LikelyDem</th>\
             <th>FullName&nbsp;&nbsp;</th>\
             <th>FullAddress</th>\
             <th>Phone</th>\
@@ -376,17 +377,18 @@ var MapsLib = {
 
       for (var row in rows) {
 
-          var weightedprimd = rows[row][0]
+          var precinct = rows[row][0]
           var fulladdress = rows[row][2]
      //   var school = "<a href='" + rows[row][5] + "'>" + rows[row][0] + "</a>";
      //   var address = rows[row][2] + "<br />" + rows[row][3] + ", " + rows[row][4];
 
         list_table += "\
           <tr>\
-            <td>" + weightedprimd + "</td>\
+            <td>" + precinct + "</td>\
             <td>" + rows[row][1] + "</td>\
+            <td>" + rows[row][2] + "</td>\
             <td>" + fulladdress + "</td>\
-            <td>" + rows[row][3] + "</td>\
+            <td>" + rows[row][4] + "</td>\
            </tr>";
       }
 
