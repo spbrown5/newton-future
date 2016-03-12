@@ -161,7 +161,7 @@ var MapsLib = {
    
   // alert($("#select_precinct").val());
    if ( $("#select_precinct").val() != "")
-      whereClause += " AND 'Precinct' = '" + $("#select_precinct").val() + "')";
+      self.whereClause += " AND 'Precinct' = '" + $("#select_precinct").val() + "')";
       alert($("#select_precinct").val());
     
     //-- Dropdown attempt
