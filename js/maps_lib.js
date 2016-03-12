@@ -162,7 +162,7 @@ var MapsLib = {
     //-- Dropdown attempt
     var sel_column = "Precinct";
     if ( $("#select_precinct").val() != "")
-    whereClause += " AND " + sel_column + " = " + $("#select_type").val() + ")";
+    whereClause += " AND " + sel_column + " = " + $("#select_precinct").val() + ")";
     
     //-------end of custom filters--------
 
