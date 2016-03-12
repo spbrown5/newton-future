@@ -162,8 +162,8 @@ var MapsLib = {
   
    if ( $("#select_precinct").val() != "")
       self.whereClause += " AND 'Precinct' = '" + $("#select_precinct").val() + "'";
-      alert($("#select_precinct").val());
-      alert(self.whereClause)
+      alert("select_precinct val:  " + $("#select_precinct").val());
+      alert("self.whereClause:  " + self.whereClause)
 
     //-------end of custom filters--------
 
@@ -299,8 +299,8 @@ var MapsLib = {
       queryStr.push(" LIMIT " + limit);
 
     var sql = encodeURIComponent(queryStr.join(" "));
-    alert(sql)
-    alert(whereClause)
+    alert("sql:  " + sql)
+    alert("whereclause:  " + whereClause)
     // console.log(sql)
     $.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
   },
