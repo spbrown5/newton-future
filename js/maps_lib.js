@@ -161,7 +161,7 @@ var MapsLib = {
    
   
    if ( $("#select_precinct").val() != "")
-      whereClause += " AND 'Precinct' LIKE '" + "(" + $("#select_precinct").val() + ")" + "'";
+      whereClause += " AND 'Precinct' = '" + $("#select_precinct").val() + "'";
       alert("select_precinct val:  " + $("#select_precinct").val());
       alert("whereClause:  " + whereClause)
 
