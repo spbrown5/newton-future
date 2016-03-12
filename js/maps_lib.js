@@ -161,9 +161,9 @@ var MapsLib = {
    
   
    if ( $("#select_precinct").val() != "")
-      self.whereClause += " AND 'Precinct' = '" + $("#select_precinct").val() + "'";
+      whereClause += " AND 'Precinct' = '" + $("#select_precinct").val() + "'";
       alert("select_precinct val:  " + $("#select_precinct").val());
-      alert("self.whereClause:  " + self.whereClause)
+      alert("whereClause:  " + whereClause)
 
     //-------end of custom filters--------
 
