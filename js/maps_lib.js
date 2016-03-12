@@ -160,10 +160,12 @@ var MapsLib = {
     whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")"; */
     
     //-- Dropdown attempt
-    var sel_column = "PrecinctName";
-    if ( $("#select_precinct").value != "")
-    whereClause += " AND " + sel_column + " = " + $("#select_precinct").value + ")";
-    
+   var myPrecinct = document.getElementById('select_precinct');
+	  var sel_column = "PrecinctName";
+	if(myPrecinct.value != "")
+  //if ( $("#select_precinct").value != "")
+  //  whereClause += " AND " + sel_column + " = " + $("#select_precinct").value + ")";
+      whereClause += " AND " + sel_column + " = " + myPrecinct.value + ")";
     //-------end of custom filters--------
 
     if (address != "") {
