@@ -161,11 +161,12 @@ var MapsLib = {
     
     //-- Dropdown attempt
    var myPrecinct = document.getElementById('select_precinct');
-	  var sel_column = "PrecinctName";
-	if(myPrecinct.value != "")
+   var sel_column = "PrecinctName";
+   if(myPrecinct[myPrecinct.selectedIndex].value != "");
+   //if(myPrecinct.value != "")
   //if ( $("#select_precinct").value != "")
   //  whereClause += " AND " + sel_column + " = " + $("#select_precinct").value + ")";
-      whereClause += " AND " + sel_column + " = " + myPrecinct.value + ")";
+      whereClause += " AND " + sel_column + " = " + myPrecinct[myPrecinct.selectedIndex].value + ")";
     //-------end of custom filters--------
 
     if (address != "") {
