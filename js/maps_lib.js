@@ -158,12 +158,15 @@ var MapsLib = {
     if ( $("#cbType9").is(':checked')) searchType += "15,";
     if ( $("#cbType10").is(':checked')) searchType += "16,";
     whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")"; */
+   
+   if ( $("#select_precinct").val() != "")
+      self.whereClause += " AND 'Precinct' = '" + $("#select_precinct").val() + "'";
     
     //-- Dropdown attempt
-   var myPrecinct = document.getElementById('select_precinct');
-   var sel_column = "PrecinctName";
-   if(myPrecinct[myPrecinct.selectedIndex].value != "");
-      whereClause += " AND " + sel_column + " = " + myPrecinct[myPrecinct.selectedIndex].value + ")";
+   //var myPrecinct = document.getElementById('select_precinct');
+   //var sel_column = "PrecinctName";
+   //if(myPrecinct[myPrecinct.selectedIndex].value != "");
+  //    whereClause += " AND " + sel_column + " = " + myPrecinct[myPrecinct.selectedIndex].value + ")";
       
     //if(myPrecinct.value != "")
     //if ( $("#select_precinct").value != "")
