@@ -160,7 +160,12 @@ var MapsLib = {
     whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")"; */
    
   
-   if ( $("#select_precinct").val() != "")
+   if ( $("#select_precinct").val() != ""){
+      if ( $("#select_precinct").val() > "0"){
+         whereClause += " AND 'Precinct' = '" + $("#select_precinct").val() + "'";
+      }}else{
+         whereClause += " AND 'Precinct' > '" + $("#select_precinct").val() + "'";
+   }     
       whereClause += " AND 'Precinct' = '" + $("#select_precinct").val() + "'";
       alert("select_precinct val:  " + $("#select_precinct").val());
       alert("whereClause:  " + whereClause)
