@@ -300,6 +300,7 @@ var MapsLib = {
 
     var sql = encodeURIComponent(queryStr.join(" "));
     alert(sql)
+    alert("whereclause= " whereClause)
     // console.log(sql)
     $.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
   },
