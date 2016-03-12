@@ -160,7 +160,7 @@ var MapsLib = {
     whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")"; */
     
     //-- Dropdown attempt
-    var sel_column = "Precinct";
+    var sel_column = "PrecinctName";
     if ( $("#select_precinct").val() != "")
     whereClause += " AND " + sel_column + " = " + $("#select_precinct").val() + ")";
     
