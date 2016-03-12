@@ -159,8 +159,11 @@ var MapsLib = {
     if ( $("#cbType10").is(':checked')) searchType += "16,";
     whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")"; */
    
+   var sp = $("#select_precinct").val()
+   alert(sp);
    if ( $("#select_precinct").val() != "")
       self.whereClause += " AND 'Precinct' = '" + $("#select_precinct").val() + "'";
+    
     
     //-- Dropdown attempt
    //var myPrecinct = document.getElementById('select_precinct');
