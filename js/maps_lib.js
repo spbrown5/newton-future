@@ -164,8 +164,8 @@ var MapsLib = {
    var sel_column = "PrecinctName";
    if(myPrecinct[myPrecinct.selectedIndex].value != "");
    //if(myPrecinct.value != "")
-  //if ( $("#select_precinct").value != "")
-  //  whereClause += " AND " + sel_column + " = " + $("#select_precinct").value + ")";
+   //if ( $("#select_precinct").value != "")
+   //  whereClause += " AND " + sel_column + " = " + $("#select_precinct").value + ")";
       whereClause += " AND " + sel_column + " = " + myPrecinct[myPrecinct.selectedIndex].value + ")";
     //-------end of custom filters--------
 
