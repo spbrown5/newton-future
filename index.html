@@ -41,7 +41,7 @@
       <div class='row'>
         <div class='col-md-4'>
         <!--MODIFY or erase any descriptive text or links below between the paragraph <p> tags -->
-          <p>Newton County Voter data - select options to view desired set</p>
+        <!--  <p>Newton County Voters</p>  -->
           <div class='well'>
             <h4>
               Address <small>(<a id='find_me' href='#'>find me</a>)</small>
@@ -61,52 +61,138 @@
                 </select>
               </label>
             </p>
-            
-            <!--MODIFY Point layer legend heading, labels (such as Interdistrict), and colors (green, blue, yellow, red, purple) to match your data -->
-            <h4>
-              Voter layer
+
+        <br>
+         <h4>
+         Select Precinct
+	</h4>
+	<label>
+    <select id='select_precinct'>
+        <option value='%' >Show All</option>
+        <option value='99' >Show None</option>
+        <option value='1' >City Pond 1</option>
+        <option value='2'>Town 2</option>
+        <option value='3'>Almon 3</option>
+        <option value='4'>Alcovy 4</option>
+        <option value='5'>Covington Mills 5</option>
+        <option value='6'>Brewers 6</option>
+        <option value='7'>Brick Store 7</option>
+        <option value='8'>Cedar Shoals 8</option>
+        <option value='9'>Livingston 9</option>
+        <option value='10'>Downs 10</option>
+        <option value='12'>Gum Creek 12</option>
+        <option value='13'>Beaverdam 13</option>
+        <option value='14'>Leguinn 14</option>
+        <option value='15'>Mansfield 15</option>
+        <option value='16'>Newborn 16</option>
+        <option value='17'>Oxford 17</option>
+        <option value='18'>Rocky Plains 18</option>
+        <option value='19'>Buck Creek 19</option>
+        <option value='20'>Stansells 20</option>
+        <option value='23'>Fairview 23</option>
+        <option value='24'>Crowell 24</option>
+        <option value='25'>Hub 25</option>
+    </select>
+</label>
+      <!--      <h4>
+              Voters
             </h4>
-            <ul class='inputs-list unstyled'>
-              <li>
+            <div style="margin-left: 0px; float: left; width: 50%">
+            <ul style="margin-left: 0px;" class='inputs-list unstyled'>
+              <li style="margin-left: 0px;">
                 <label class='checkbox inline'>
                   <input type='checkbox' id='cbType1' />
                   <span class='filter-box filter-blue'></span>
-                  12  <!--This label can be modified from actual data entry ("Interdistrict") -->
+                  2  
                 </label>
               </li>
-              <li>
+              <li style="margin-left: 0px;">
                 <label class='checkbox inline'>
                   <input type='checkbox' id='cbType2' />
                   <span class='filter-box filter-blue'></span>
-                  11
+                  13
                 </label>
               </li>
-              <li>
+              <li style="margin-left: 0px;">
                 <label class='checkbox inline'>
                   <input type='checkbox' id='cbType3' />
-                  <span class='filter-box filter-green'></span>
-                  10
+                  <span class='filter-box filter-blue'></span>
+                  24
                 </label>
               </li>
-              <li>
+              <li style="margin-left: 0px;">
                 <label class='checkbox inline'>
                   <input type='checkbox' id='cbType4' />
-                  <span class='filter-box filter-green'></span>
-                  9
+                  <span class='filter-box filter-blue'></span>
+                  3
                 </label>
-              </li>            
-              <li>
+              </li>
+              <li style="margin-left: 0px;">
                 <label class='checkbox inline'>
                   <input type='checkbox' id='cbType5' />
-                  <span class='filter-box filter-yellow'></span>
-                  8
+                  <span class='filter-box filter-blue'></span>
+                  9
+                </label>
+              </li>
+             </ul>
+             </div>
+             <div style="margin-left: 0px; float: left; width: 50%">
+             <ul style="margin-left: 0px;" class='inputs-list unstyled'>	
+              <li style="margin-left: 0px;">
+                <label class='checkbox inline'>
+                  <input type='checkbox' id='cbType6' />
+                  <span class='filter-box filter-green'></span>
+                  6
+                </label>
+              </li>            
+              <li style="margin-left: 0px;">
+                <label class='checkbox inline'>
+                  <input type='checkbox' id='cbType7' />
+                  <span class='filter-box filter-green'></span>
+                  14
                 </label>
               </li>			
-			</ul>
-            <h4>
+              <li style="margin-left: 0px;">
+                <label class='checkbox inline'>
+                  <input type='checkbox' id='cbType8' />
+                  <span class='filter-box filter-green'></span>
+                  25
+                </label>
+              </li>			
+              <li style="margin-left: 0px;">
+                <label class='checkbox inline'>
+                  <input type='checkbox' id='cbType9' />
+                  <span class='filter-box filter-green'></span>
+                  15
+                </label>
+              </li>			
+              <li style="margin-left: 0px;">
+                <label class='checkbox inline'>
+                  <input type='checkbox' id='cbType10' />
+                  <span class='filter-box filter-green'></span>
+                  16
+                </label>
+              </li>			
+		</ul>
+		</div> -->
+            <br><br>
+              <img alt="bluemarker"
+                   src="./images/large_bluev2.png" height="23"
+                   width="21">&nbsp; First quartile&nbsp;
+              <img alt="greenmarker"
+                   src="./images/large_greenv2.png" height="21"
+                   width="21">&nbsp; Second quartile<br>
+              <!--MODIFY Point layer legend heading, labels (such as Interdistrict), and colors (green, blue, yellow, red, purple) to match your data -->
+
+              <img alt="bluemarker" align="center"
+                   src="./images/DemPopv2.png" >
+            <br><br>
+              <h4>
+            <p> Layers</p>
             <!--MODIFY Polygon layers legend heading, labels (such as Polygon layer 1) to match your data, and related variables in maps_lib.js file -->
               <!--Polygon layers-->
             </h4>
+            <div>
             <ul class='inputs-list unstyled'>
               <li>
                 <label class='radio inline'>
@@ -127,7 +213,7 @@
                 </label>
               </li>
             </ul> 
-            
+            </div>
             <div class='clearfix'></div>
             <p class='pull-left'>
               <a class='btn btn-primary' id='search' href='#'>
@@ -142,7 +228,7 @@
             <p class='pull-right'>
               <a class='btn btn-default' id='viewmode' href='#'>
                 <i class='glyphicon glyphicon-list-alt'></i>
-                List view
+                List
               </a>
             </p>
             <div class='clearfix'></div>
@@ -198,6 +284,10 @@ href='https://www.google.com/fusiontables/data?docid=1abT7kEp8xQHfcW1uWh6JSdR2E-
           $('#search_radius').change(function(){
             MapsLib.doSearch();
           });
+          
+          $('#select_precinct').change(function(){
+            MapsLib.doSearch();
+          });          
           
           $('#search').click(function(){
             MapsLib.doSearch();
